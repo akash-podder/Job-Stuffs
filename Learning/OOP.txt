@@ -1,0 +1,63 @@
+---------------------------------------------------------------------
+OOP:
+Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
+Object-oriented programming is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields, and code, in the form of procedures.
+Properties: Encapsulation, Abstraction, Inheritance, Polymorphism
+---------------------------------------------------------------------
+SOLID
+	Acronym for the first five object-oriented design (OOD) principles
+	S - Single-responsiblity Principle
+	O - Open-closed Principle
+	L - Liskov Substitution Principle
+	I - Interface Segregation Principle
+	D - Dependency Inversion Principle
+	https://www.baeldung.com/solid-principles
+---------------------------------------------------------------------
+ABSTRACTION:
+Showing only what needs to be seen and hiding details. Using abstract class and interface. Another example can be making helper methods and variable private and keeping only what user needs to see public.
+---------------------------------------------------------------------
+ENCAPSULATION:
+Protect data by wrapping code around it. Getter setter are examples. We can validate them while setting instead of direct variable access. Class itself is an example of encapsulation.
+--------------------------------------------------------------------
+POLYMORPHISM:
+*Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+*In Java, a method signature is part of the method declaration. It's the combination of the method name and the parameter list.
+*Overloading just takes the function name and parameters(signature) into account. Not the return type.
+*Compile time polymorphism: Method overloading
+*Run time polymorphism: Methof overriding. Also known as dynamic method dispatch.
+*JAVA allows same name for static and instance method. Even their return type can be different;
+*Return type must be same for overloaded methods.
+---------------------------------------------------------------------
+INHERITANCE:
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object
+---------------------------------------------------------------------
+Class is template or blueprint. Object is the instance of that blueprint.
+https://www.javatpoint.com/difference-between-object-and-class
+---------------------------------------------------------------------
+*An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. When partial implementation is needed, abstract class should used.
+*Abstrct class can have contractor, interface can't.
+---------------------------------------------------------------------
+Default in java: https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9#:~:text=Java%208%20brought%20a%20major,while%20making%20this%20big%20change.&text=Any%20method%20inherited%20from%20a,method%20inherited%20from%20an%20interface.
+---------------------------------------------------------------------
+Error vs exception: https://www.tutorialspoint.com/difference-between-exception-and-error-in-java#:~:text=Errors%20mostly%20occur%20at%20runtime,checked%20exceptions%20and%20unchecked%20exceptions.
+---------------------------------------------------------------------
+*An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+*when the error occurred. Creating an exception object and handing it to the runtime system is called throwing an exception.
+*https://www.javatpoint.com/exception-handling-in-java
+---------------------------------------------------------------------
+FINAL:
+*Filan variable can only be initialized after declaration inside a constructor. Also static block can only be initialized after declaration inside static block.
+*Final variable can't be changed
+*Final amd private method can't be overridden
+*Final class cannot be extended
+*parameters can be final too
+*comstructor can't be final
+---------------------------------------------------------------------
+METHOD REFERENCE:
+https://www.baeldung.com/java-method-references
+https://www.javatpoint.com/java-8-method-reference
+https://youtu.be/svQKKg3aFzo
+---------------------------------------------------------------------
+STATIC: https://www.javatpoint.com/static-keyword-in-java
+The static block is a block of statement inside a Java class that will be executed when a class is first loaded into the JVM. A static block helps to initialize the static data members
+---------------------------------------------------------------------

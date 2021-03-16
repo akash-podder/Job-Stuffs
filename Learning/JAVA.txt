@@ -1,0 +1,20 @@
+Enum
+	https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+
+Generic
+	https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html
+	Wildcards are used to relax the restrictions on a variable
+	Upper bound wildcard: ? extends SomeClass
+	Lower bound wildcard: ? super SomeClass
+
+Polymorphism
+	JAVA allows same name for static and instance method. Even their return type can be different;
+	Return type must be same for overloaded methods.
+
+Default and Multiple inheritance
+	https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9#:~:text=Java%208%20brought%20a%20major,while%20making%20this%20big%20change.&text=Any%20method%20inherited%20from%20a,method%20inherited%20from%20an%20interface.
+
+METHOD REFERENCE:
+	https://www.baeldung.com/java-method-references
+	https://www.javatpoint.com/java-8-method-reference
+	https://youtu.be/svQKKg3aFzo

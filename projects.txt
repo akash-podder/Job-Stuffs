@@ -1,0 +1,50 @@
+App Usage Monitor
+	Shared Preference
+	Json reading writing
+	splash screen
+	view pager
+	recycler view
+	AsyncTask
+	Brodcast Receiver and Alarm manager
+	UsageStatsManager UsageEvents
+	Firebase
+	NotificationManager
+
+Word Segmentation
+	opencv
+		blur
+		adaptive threshold
+		contour finding
+
+FIGHT!
+	UNET
+
+SHIKHA
+	
+P2P Messaging App
+	Java Socket Programming
+
+Find Volunteer
+	MVC
+	Eloquent
+	Middleware
+
+Linear Equation Solver
+	Gaussian Elimination Method
+
+Practice Piano Note
+	vexflow
+
+Offline Diary
+	tableView
+	media
+	mediaView
+
+Glut Draw polygon and transform
+	DDA Line drawing
+	Transform
+
+ECHO
+	Scraping
+	text to speech
+	speech to text

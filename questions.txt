@@ -1,0 +1,5 @@
+grettings, why should i hire you, why do you want to work in this company
+
+
+how array.length is change even though it's final
+how index changes after increasing hashmap size

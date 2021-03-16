@@ -1,0 +1,9 @@
+প্রশ্ন করা হবে কম্পিউটার সাইন্স এর সব বেসিক টপিকের মধ্য থেকে। আমি নিজে যেই যেই জায়গা থেকে প্রিপারেশন নিয়েছিলাম ইন্টারভিউ এর জন্য সেইটার একটা লিস্ট দিয়ে দিচ্ছি - 
+
+1. University exam questions (সাধারণতঃ এক্সামের প্রশ্নে মোটামুটি বেসিক জিনিসপাতি কভার করা হয়, যেটা ইন্টারভিউতে আসতে পারে) 
+2. Top computer science interview questions for freshers গুগল করে অনেক ভালো প্রশ্ন পাওয়া যায়
+3. Leetcode/Interviewbit/Hackerrank থেকে সলভ করা যাইতে পারে কোডিং রিলেটেড প্রশ্নগুলার জন্য। আমাদের থেরাপে কিন্তু কখনোই পিউর এসিএম টাইপের প্রশ্ন খুব একটা করে না। সিম্পল প্রব্লেম সল্ভিং করা লাগে। সো, যারা এসিএম করে নাই তাদেরও খুব একটা ভয় পাওয়ার দরকার নাই। easy/medium এর চেয়ে কঠিন প্রশ্ন এট লিস্ট বাংলাদেশে ইন্টারভিউতে পাবি না।
+4. Hackerrank/Leetcode থেকে SQL Queries প্র্যাকটিস করা যাইতে পারে
+5. Youtube for 5 most common design patterns
+6. Object Oriented Programming from Youtube/blogs
+7. Youtube/Google থেকে বিহেভিওরাল প্র্যাকটিস করা যাইতে পারে (introduce yourself, what are your strengths, what are your weaknesses, why should we hire you, tell me about a time when you showed leadership capability, when did you feel the proudest in your life, what are your achievements bla bla bla...)

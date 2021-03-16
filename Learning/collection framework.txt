@@ -1,0 +1,5 @@
+*Set uses map as their underlying data structure.
+*LinkedHashSet/LinkedHashMap preserves insertion order
+*Treemap uses red black binary tree which is a self balanced binary tree. Treemap is sorted. Can't contain any null key but can have multiple null values.
+*Hashmap can have 1 null key.
+*Queue offer returns false if capacity reached whereas add throws exception.

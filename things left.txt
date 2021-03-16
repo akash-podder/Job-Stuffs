@@ -1,0 +1,38 @@
+comparator, comparable
+operator overloading
+iterator in java
+design pattern
+threads and synchronize
+type casting
+sort linked list
+networking in java (socket programming)
+revise projects
+c++ stl
+lambda
+gcd, lcm
+
+java 2-1 final question
+java stream
+enum
+java, algorithm, data structure class lecture
+big o, big omega, big theta
+factorization
+all collection frameworks methods
+how synchronization work
+input, scanner, buffer reader, BufferedWriter
+doubly linked list implementation java
+jvm jre jdk
+https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
+https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/
+
+
+laravel eloquent, middleware
+revise python, c#, javascript, git
+networking, dbms, os, web
+
+cycles in graph
+graph theory
+disjoint set
+krushkal's
+floyd marshal
+bellman ford

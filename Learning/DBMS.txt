@@ -1,0 +1,101 @@
+---------------------------------------------------------------------
+The CAP theorem states that a distributed computer system cannot guarantee all of the following three properties at the same time:
+*Consistency: Data is always consistent over the whole distributed system.
+*Availability: Data can always be read or written even if some system fails and data can't be consistent over the whole distributed system.
+*a given system continues to operate even with data loss or system failure. A single node failure should not cause the entire system to collapse.
+*https://youtu.be/R_Fxz14tr2M
+---------------------------------------------------------------------
+A BASE system gives up on consistency.
+*Basic Availability: The database appears to work most of the time.
+*Soft State: Stores don’t have to be write-consistent or mutually consistent all the time.
+*Eventual consistency: Data should always be consistent, with regards how any number of changes are performed
+*Example: No one would mind if their tweet were inconsistent within their social network for a short period of time. It is more important to get an immediate response than to have a consistent state of users' information
+---------------------------------------------------------------------
+Transaction is a logical unit of work, which can be an action or a series of action carried out by a single user or application program and accesses and possibly modifies the contents of a database.
+---------------------------------------------------------------------
+ACID: Atomicity, Consistency, Isolation, Durability
+---------------------------------------------------------------------
+The fundamental difference between ACID and BASE database models is the way they deal with this limitation addressed in CAP theorem.
+*The ACID model provides a consistent system.
+*The BASE model provides high availability.
+*https://phoenixnap.com/kb/acid-vs-base#:~:text=The%20fundamental%20difference%20between%20ACID,BASE%20model%20provides%20high%20availability.
+---------------------------------------------------------------------
+SQL: For relational database. Great for small application. Maintains ACID property. Main issue is scalability. Example: mysql
+NoSQL: There is no restriction to what type of data can be stored. Usually data is stored in a json format. Example: mongoDb. Highly scalable. Not very reliable when it comes to ACID.
+---------------------------------------------------------------------
+SQL is a query language, whereas MySQL is a relational database that uses SQL to query a database. You can use SQL to access, update, and manipulate the data stored in a database.
+---------------------------------------------------------------------
+A database management system (DBMS) is a software package designed to define, manipulate, retrieve and manage data in a database.
+---------------------------------------------------------------------
+A database is an organized collection of structured information, or data
+---------------------------------------------------------------------
+Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output.
+---------------------------------------------------------------------
+*Hierarchical database model stores data in a tree like structure. Related data are physically connected as parent-child branches.
+*There are sepate table for different types of data. Related datas are not physically linked rather use foreign keys keys to relate to.
+*https://www.google.com/amp/s/www.geeksforgeeks.org/difference-between-hierarchical-and-relational-data-model/amp/
+---------------------------------------------------------------------
+DDL: Data definition language. Defines db structure. CREATE, ALTER, DROP, RENAME
+DML: Data manipulate language. INSERT, UPDATE, DELETE
+---------------------------------------------------------------------
+A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. A database schema defines its entities and the relationship among them.
+---------------------------------------------------------------------
+A table is a collection of related data
+---------------------------------------------------------------------
+*ERD: to make mere mortal end-users (and business owners) UNDERSTAND the model of a given business solution.
+*DATA SCHEMA: a "blueprint" used by DBAs to BUILD databases
+---------------------------------------------------------------------
+Database relationships are associations between tables that are created using join statements to retrieve data.
+There are commonly three types of relationships between the data: one-to-one, one-to-many, and many-to-many.
+https://www.ibm.com/support/knowledgecenter/SSANHD_7.6.0/com.ibm.mbs.doc/configur/c_db_relationships.html
+---------------------------------------------------------------------
+Row = Tuple = Record = Entry
+---------------------------------------------------------------------
+Constraints: https://www.w3resource.com/mysql/creating-table-advance/constraint.php#:~:text=MySQL%20CONSTRAINTS%20are%20used%20to,applied%20to%20the%20entire%20table.
+---------------------------------------------------------------------
+Keys: https://www.guru99.com/dbms-keys.html#:~:text=CANDIDATE%20KEY%20is%20a%20set,key%20with%20no%20repeated%20attributes.&text=A%20table%20can%20have%20multiple%20candidate,only%20a%20single%20primary%20key.
+Foreign keys can be null
+---------------------------------------------------------------------
+Query optimization is a feature of many relational database management systems and other databases such as graph databases. The query optimizer attempts to determine the most efficient way to execute a given query by considering the possible query plans.
+---------------------------------------------------------------------
+*SQL Operations Order: SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
+*HAVING vs WHERE: https://youtu.be/nNrgRVIzeHg
+*Cheat Sheet: https://www.sqltutorial.org/sql-cheat-sheet/
+*DROP deletes whole table/database
+*TRANCATE deletes all data inside table
+*Indexes are used to retrieve data from the database more quickly than otherwise.
+*Creating an index on a field in a table creates another data structure which holds the field value, and a pointer to the record it relates to. Which makes it possible to binary search in that column.
+---------------------------------------------------------------------
+*OLTP (Online Transactional Processing) mainly focused on transaction oriented task. Invlolves a small selection of records i.e. exchanging money which involves two records. Needs high availability and ACID compliance.
+*OLAP (Online Analytical Processing) involves many record for analytical purpose.
+*https://database.guide/what-is-oltp/#:~:text=OLTP%20(Online%20Transactional%20Processing)%20is,a%20large%20number%20of%20users.
+---------------------------------------------------------------------
+Collation is used for defining sorting order for character sets(chinese, latin, germal....)
+---------------------------------------------------------------------
+SQL set operators
+*Union: merges two query result from select. Doesn't contain duplicate result
+*Union All: Union but can have duplicate
+*Minus: A\B
+*Intersect: A intersection B
+---------------------------------------------------------------------
+SQL aliases are used to give a table, or a column in a table, a temporary name. Aliases are often used to make column names more readable. An alias only exists for the duration of that query.
+---------------------------------------------------------------------
+*Aggregate functions operate against a collection of values and return a single summarizing value. Ex. Sum, min, max, avg, count, first, last
+*Scalar functions return a single value based on scalar input arguments. Operates on all results. Ex. Ucase, lcase, format, len, round, now
+---------------------------------------------------------------------
+A subquery is a query that is nested inside a SELECT , INSERT , UPDATE , or DELETE statement, or inside another subquery.
+Joins and subqueries are both used to combine data from different tables into a single result.
+---------------------------------------------------------------------
+In SQL, a view is a virtual table based on the result-set of an SQL statement. A view always shows up-to-date data! The database engine recreates the view, every time a user queries it.
+https://www.w3schools.com/sql/sql_view.asp
+---------------------------------------------------------------------
+*Normalization is a technique to organize data into multiple related tables to reduce data redundancy.
+*Normalization reduces data anomalies such as insertion anomaly, update anomaly, deletion animaly.
+*https://www.guru99.com/database-normalization.html
+*Denormalization is used to combine multiple table data into one so that it can be queried quickly.
+---------------------------------------------------------------------
+*Unit testing, a testing technique using which individual modules are tested to determine if there are any issues by the developer himself.
+*INTEGRATION TESTING is a level of software testing where individual units / components are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units.
+*Test-driven development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases
+*User Acceptance Testing (UAT) is a type of testing performed by the end user or the client to verify all the requirements or to accept the software system before moving the software application to the production environment.
+---------------------------------------------------------------------

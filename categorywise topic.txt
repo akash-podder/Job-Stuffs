@@ -1,0 +1,32 @@
+Time and space complexity of everything
+Problem solving
+	linked list
+		reverse
+	sort
+	graph
+		cycle detection
+	string problems
+
+Data structure
+	set*
+		how set only stores unique values
+	arraylist
+
+Networking
+	http
+	Tcp/ip
+	how http maintains session
+
+Java/OOP
+	Stream
+	Static
+	When to use abstract class and interface
+
+DBMS
+	ACID
+
+THESIS
+
+Behavioral
+	Expected salary
+	Do I want to go abroad

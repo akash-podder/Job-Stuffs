@@ -1,0 +1,32 @@
+* https://medium.com/@shashvatshukla/framework-vs-library-vs-platform-vs-api-vs-sdk-vs-toolkits-vs-ide-50a9473999db
+* Library
+	A library refers to code that provides functions that you can call from your own code to deal with common tasks.
+
+* API
+	Application Programming interface
+	Library refers to the code itself, whereas API refers to the interface. 
+	Allows two applications to talk to each other
+
+
+* REST API
+	also known as RESTful API
+	WEB API
+
+
+* SDK
+	Software Development Kit.
+	This is a complete kit of software development tools for a specific platform.
+	This “kit” can include all sorts of things such as: Libraries, APIs, IDEs, Documentation
+
+* FRAMEWORK
+	A framework is a generic structure that provides a skeleton for building applications.
+	The abstraction allows for common design patterns to be easily reused while still allowing the specific details to be left to the developers.
+
+* LIBRARY
+	A library refers to code that provides functions that you can call from your own code to deal with common tasks.
+
+* Remaining
+	Libray vs Framework
+	Api vs Library
+	Api vs Sdk
+	library, api, sdk, framework

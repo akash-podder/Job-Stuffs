@@ -1,0 +1,9 @@
+sort
+linked list
+collection framework
+complexities
+regular expression
+exception
+python, c#, javascript, c++ stl 
+
+tell me about yourself
