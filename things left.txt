@@ -10,6 +10,7 @@ revise projects
 c++ stl
 lambda
 gcd, lcm
+doubly linked list implementation java
 
 java 2-1 final question
 java stream
@@ -20,19 +21,20 @@ factorization
 all collection frameworks methods
 how synchronization work
 input, scanner, buffer reader, BufferedWriter
-doubly linked list implementation java
 jvm jre jdk
 https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
 https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/
+javafx collision check
+how unity collider work
+laravel authentication
+firebase authentication
+how unity stuffs(collision, unet) works
+self introduction
 
-
-laravel eloquent, middleware
+laravel eloquent, middleware, authentication
 revise python, c#, javascript, git
 networking, dbms, os, web
 
-cycles in graph
 graph theory
-disjoint set
-krushkal's
-floyd marshal
+krushkal, prims using priority queue
 bellman ford

@@ -1,2 +1,9 @@
 Red black tree
 	self balancing binary search tree
+
+Disjoint Set
+	Useful for detecting cycle in undirected graph
+	make set complexity: O(E*V)
+	find complexity: O(V)
+	union complexity: O(V)
+	after path compression and ranking: O(logn)

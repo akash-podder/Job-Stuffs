@@ -1,16 +1,35 @@
 *Divide and conquer means first divide into smaller sub problems. solve the smaller sub problems then merge
 *Binary search is decrease and conquer
-*Greedy algorithm: Prim's, krushkal's finds minimum spanning tree
+*Greedy algorithm: Prim's, krushkal's, Dijkstra
 
 * Minimum spanning Tree
 	Spanning tree of a connected graph is a tree that connects all the vertice
 	MST is the spanning tree with the minimum cost
 	Example: Prim's, Krishkal's. Works for undirected and connected graphs only
 
+* Prims's
+	Finds minimum spanning tree in an undirected connected graph
+	Selects and arbitrary node and then continue to select the lowest adjacent cost node
+	Works with negative edges
+	Complexity: Adjacency List: O(ElogV), Adjacency Matrix: O(V^2)
+
+* Krushkal's
+	Finds minimum spanning tree in an undirected connected graph
+	For non-connected graph, it finds mst for every sub connected graph
+	Selects the lowert cost node if that doesn't make any cycle
+	Works with negative edges
+	Complexity: O(ElogV) or O(ElogE)
+
 * Dijkstra's Algorithm
+	Greedy Algorithm
 	Finds shortest paths from source to all nodes
-	Only works in connected graph
-	Very similar to prim's algo.
-	Difference with Prim's
-		While updating the weight we have to consider the weight of the current node
-		Works for directed graph too
+	Mainly designed for directed graph but works for undirected graph too
+	Only works in connected graph and non-negative edges
+	Complexity: Adjacency List: O(ElogV), Adjacency Matrix: O(V^2)
+
+* Floyd Warshall
+	Finds shortest paths between all nodes
+	Mainly designed for directed graph but works for undirected graphs too
+	Doesn't work if graph contains negative weighted cycles
+	Dynamic programming
+	Time compexity: O(V^3), Space complexity: O(V^2)

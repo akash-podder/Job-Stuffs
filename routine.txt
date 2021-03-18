@@ -12,10 +12,10 @@
 				 	dbms)
 
 
-morning to lunch	-> academic
+morning to lunch	-> academic+code revise for interview
 lunch to evening	-> problem solving
 evening rest		-> theory on mobile
-night to dinner		-> theory on pc
+night to dinner		-> theory on pc + things left
 dinner to sleep		-> revise cv stuffs on mobile
 
 parts

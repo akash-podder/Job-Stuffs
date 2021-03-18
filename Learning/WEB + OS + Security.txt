@@ -6,11 +6,15 @@
 	Application Programming interface
 	Library refers to the code itself, whereas API refers to the interface. 
 	Allows two applications to talk to each other
+	It's a contract between one piece of software to talk to another piece of software
 
 
 * REST API
+	Representational State Transfer API
 	also known as RESTful API
 	WEB API
+	Works same way that a website does. It's like loading a web page.
+	Client request to the server and get back the data over the http protocol
 
 
 * SDK
