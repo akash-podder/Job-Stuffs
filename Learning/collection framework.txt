@@ -1,5 +1,19 @@
+ArrayList
+	Original capacity is 10 if none specified
+	Size increases by 50% of current size when reaches capacity
+	Not synchronized
+
+Vector
+	Almost same ArrayList
+	Doubles twice in size when capacity reaches
+	Synchronized
+	Stack is a subclass
+
+
+
 *Set uses map as their underlying data structure.
 *LinkedHashSet/LinkedHashMap preserves insertion order
 *Treemap uses red black binary tree which is a self balanced binary tree. Treemap is sorted. Can't contain any null key but can have multiple null values.
 *Hashmap can have 1 null key.
 *Queue offer returns false if capacity reached whereas add throws exception.
+*Vector and arraylist are almost same. Vector is synchronized hence slow. Also vector doubles in size when capacity reaches and arraylist grow 50%.

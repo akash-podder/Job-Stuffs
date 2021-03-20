@@ -1,9 +1,12 @@
 sort
 linked list
+stack from queue, queue from stack
+all saved images
 collection framework
+sort algorithms from geekforgeeks
 complexities
 regular expression
 exception
-python, c#, javascript, c++ stl 
+python, c#(getter, setter), javascript, c++ stl 
 
 tell me about yourself

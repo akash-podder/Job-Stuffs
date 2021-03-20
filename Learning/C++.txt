@@ -1,0 +1,23 @@
+memset(array, value, sizeof(array))
+	value can only be 0 or -1 for int array
+
+priority_queue<int, vector<int>, greater<int>> pq;
+
+fill(array, array + size, fillValue)
+
+struct myComp {
+    bool operator() (int a, int b) {
+        return cost[a] > cost[b];
+    }
+};
+
+struct myComp {
+    constexpr bool operator()( pair<int, long long> const& a, pair<int, long long> const& b) const noexcept {
+        return a.second > b.second;
+    }
+};
+
+
+things left
+-----------
+comparator, comparator for struct

@@ -13,17 +13,6 @@
 	layer 2
 * Layers: https://www.geeksforgeeks.org/layers-of-osi-model/
 
-* VPN
-	hides ip
-	encrypts data
-* Proxy
-	app level
-	hides ip
-	doesn't encrypt data
-* Firewall
-	check incoming and ongoing traffic
-	user can set rules for blocking traffic
-
 * Default gateway: Ip address for communicating with outside network. Routers private address is the network's default gateway
 
 * HTTP
@@ -50,8 +39,6 @@
 	Symatric
 	Asymatric
 	RSA, AES
-
-
 
 * Remaining
 	statefull vs stateless

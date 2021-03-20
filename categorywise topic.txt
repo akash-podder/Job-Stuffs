@@ -11,6 +11,7 @@ Data structure
 	set*
 		how set only stores unique values
 	arraylist
+	Linked List
 
 Networking
 	http
@@ -30,3 +31,8 @@ THESIS
 Behavioral
 	Expected salary
 	Do I want to go abroad
+	Introduce yourself
+	Why therap
+		One of the best place for freshers and beginners
+		shobai helpful abong friendly
+		Work environment khubi valo

@@ -61,3 +61,25 @@ https://youtu.be/svQKKg3aFzo
 STATIC: https://www.javatpoint.com/static-keyword-in-java
 The static block is a block of statement inside a Java class that will be executed when a class is first loaded into the JVM. A static block helps to initialize the static data members
 ---------------------------------------------------------------------
+Threading:
+* Join: The parent thread waits until the joined thread is terminated.Defined in Thread class.
+* Wait: Can only be called inside synchornized method or block. wait() causes the accessing thread to go into waiting state until any other thread which is accessing the same resource calls notify() or notifyAll(). Defined in Object class.
+* Notify: Notify arbitrarily wakes up any thread which is waiting on the same resource. notifyAll() will wake up all the thread waiting on the same resource. Defined in Object class.
+---------------------------------------------------------------------
+Heap:
+* Heap is a free-floating region of memory. It is used by programming languages to store global variables. By default, all global variable are stored in heap memory space. It supports Dynamic memory allocation.
+* In java class instances and arrays are stored in heap.
+String Pool:
+*It is a memory area inside the heap memory.
+*If we use literal to create string then if the string already exists in pool memory then it will just return the address of it. Else new string will be created on the pool
+*If we use new keyword then one string will be created on the heap and if the pool doesn't have that string, the same string will be created on the pool. But the memory address of the heap string will be returned
+*some_string.intern() method will return the pool copy of the string or create the string in the pool then return.
+*https://medium.com/javarevisited/what-does-string-pool-mean-in-java-414c725fbd59
+---------------------------------------------------------------------
+Literals:
+int decimal = 100;
+int octal = 0144;
+int hexa = 0x64;
+int binary = 0b111;
+*https://www.geeksforgeeks.org/literals-in-java/
+---------------------------------------------------------------------

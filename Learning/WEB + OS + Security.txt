@@ -11,11 +11,10 @@
 
 * REST API
 	Representational State Transfer API
-	also known as RESTful API
+	Also known as RESTful API
 	WEB API
 	Works same way that a website does. It's like loading a web page.
 	Client request to the server and get back the data over the http protocol
-
 
 * SDK
 	Software Development Kit.
@@ -26,11 +25,83 @@
 	A framework is a generic structure that provides a skeleton for building applications.
 	The abstraction allows for common design patterns to be easily reused while still allowing the specific details to be left to the developers.
 
-* LIBRARY
-	A library refers to code that provides functions that you can call from your own code to deal with common tasks.
+* VPN
+	hides ip
+	encrypts data
+
+* Proxy
+	app level
+	hides ip
+	doesn't encrypt data
+	Server doesn't know who is requesting
+	Can cache. Proxy server will respond immediately if it has the response of the client in cache instead of communication with the server.
+	ISP proxy server can block sites.
+
+* Firewall
+	check incoming and ongoing traffic
+	user can set rules for blocking traffic
+
+* Reverse Proxy
+	The client don't know which server it is connected to
+	Reverse proxy will decide which server it will deliver the request of the client depending upon the availibility and location.
+	Example: Google
+	Can also cache
+
+* Stateless Protocol
+	The server responds to the requests based on the current state of the client. Server don't need to know any information about previous states of the client.
+	Server also doesn't store the state of the client.
+	Example: HTTP, UDP, DNS
+
+* Statefull Protocol
+	Keeps track of the connection information between client
+	Server saves status and session information
+	Example: TCP, FTP, Telnet
+
+* Cookie
+	An HTTP cookie is a small piece of data stored on the user's computer by the web browser while browsing a website.
+	Cookies are sent using http headers.
+	Stored cookie is automatically sent to the corresponding website when user visit them.
+
+* Session
+	A session is a temporary and interactive information interchange between two or more communicating devices, or between a computer and user.
+	Session is stored in the server's database. Session contains information about the user.
+	Sesion id is sent as a cookie to the user's browser so that the server can validate the user next time the user visitis the website.
+
+* Token
+	To authorize a service to a third party(like any android application) token is used.
+	Token is granted to a third party by a service if the user allows it.
+	Token allows a third party to access certain information about a certain user.
+	Token holds information about the permissions and user.
+	Example: OAtuth, OpenID
+
+* OAuth
+	OAtuth is made for a service to authorize another service(3rd party) on behalf of the user
+
+* Monolithic Architecture
+	A monolithic application is built as a single and indivisible unit. The whole application will be down if one part of it is needed to be fixed.
+	Easier to develop and deploy as very high skill is not necessary
+
+* Microservice Architecture
+	In microservice architecture, application is broken down into separate independent compnents and each component is maintained separately.
+	The components talk to each other via api calls.
+	Separate unit can be easily fixed and during that time only that service of the app ill be unaccesible to the user
+
+* Encoding
+	A technique for transforming data into another format for transmitting or various reason.
+	To transmit a image over the url, image needs to be converted into base64 format characters. Then it can be transfared and upon receiving, this base64 characters con be docoded into the image again.
+
+* Encryption
+	Encryption is a two-way function used mainly for protection and security.
+	Encrypted things can be decrypted by using proper key (Symetric, Asymetric).
+	Example: AES, RSA
+
+* Hashing
+	Hashing converts the input into an irreversable form.
+	Hashing mainly used for checking data integrity and validation.
+	Same input will always generate same output.
+	Example: MD4, MD5, SHA
 
 * Remaining
-	Libray vs Framework
-	Api vs Library
-	Api vs Sdk
-	library, api, sdk, framework
+	Symetric
+	Asymetric
+	AES, RSA
