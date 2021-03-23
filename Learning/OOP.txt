@@ -24,7 +24,7 @@ POLYMORPHISM:
 *In Java, a method signature is part of the method declaration. It's the combination of the method name and the parameter list.
 *Overloading just takes the function name and parameters(signature) into account. Not the return type.
 *Compile time polymorphism: Method overloading
-*Run time polymorphism: Methof overriding. Also known as dynamic method dispatch.
+*Run time polymorphism: Method overriding. Also known as dynamic method dispatch.
 *JAVA allows same name for static and instance method. Even their return type can be different;
 *Return type must be same for overloaded methods.
 ---------------------------------------------------------------------
@@ -34,7 +34,7 @@ Inheritance in Java is a mechanism in which one object acquires all the properti
 Class is template or blueprint. Object is the instance of that blueprint.
 https://www.javatpoint.com/difference-between-object-and-class
 ---------------------------------------------------------------------
-*An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. When partial implementation is needed, abstract class should used.
+*An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. When partial implementation is needed, abstract class should be used.
 *Abstrct class can have contractor, interface can't.
 ---------------------------------------------------------------------
 Default in java: https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9#:~:text=Java%208%20brought%20a%20major,while%20making%20this%20big%20change.&text=Any%20method%20inherited%20from%20a,method%20inherited%20from%20an%20interface.
@@ -46,7 +46,7 @@ Error vs exception: https://www.tutorialspoint.com/difference-between-exception-
 *https://www.javatpoint.com/exception-handling-in-java
 ---------------------------------------------------------------------
 FINAL:
-*Filan variable can only be initialized after declaration inside a constructor. Also static block can only be initialized after declaration inside static block.
+*Filan variable can only be initialized after declaration inside a constructor. Also final static variable can only be initialized after declaration inside static block.
 *Final variable can't be changed
 *Final amd private method can't be overridden
 *Final class cannot be extended

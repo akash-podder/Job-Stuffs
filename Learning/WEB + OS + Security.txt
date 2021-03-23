@@ -78,17 +78,19 @@
 	OAtuth is made for a service to authorize another service(3rd party) on behalf of the user
 
 * Monolithic Architecture
-	A monolithic application is built as a single and indivisible unit. The whole application will be down if one part of it is needed to be fixed.
+	A monolithic application is built as a single and indivisible unit.
+	The whole application will be down if one part of it is needed to be fixed.
 	Easier to develop and deploy as very high skill is not necessary
 
 * Microservice Architecture
 	In microservice architecture, application is broken down into separate independent compnents and each component is maintained separately.
 	The components talk to each other via api calls.
 	Separate unit can be easily fixed and during that time only that service of the app ill be unaccesible to the user
+	Example: Facebook
 
 * Encoding
 	A technique for transforming data into another format for transmitting or various reason.
-	To transmit a image over the url, image needs to be converted into base64 format characters. Then it can be transfared and upon receiving, this base64 characters con be docoded into the image again.
+	To transmit a image over the url, image needs to be converted into base64 format characters. Then it can be transfared and upon receiving, this base64 characters can be docoded into the image again.
 
 * Encryption
 	Encryption is a two-way function used mainly for protection and security.
@@ -96,9 +98,9 @@
 	Example: AES, RSA
 
 * Hashing
-	Hashing converts the input into an irreversable form.
+	Hashing converts an input into an irreversable form.
 	Hashing mainly used for checking data integrity and validation.
-	Same input will always generate same output.
+	Same input will always generate same hash if same hashing algorithm is used.
 	Example: MD4, MD5, SHA
 
 * Remaining

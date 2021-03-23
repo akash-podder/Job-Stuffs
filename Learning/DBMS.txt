@@ -2,7 +2,7 @@
 The CAP theorem states that a distributed computer system cannot guarantee all of the following three properties at the same time:
 *Consistency: Data is always consistent over the whole distributed system.
 *Availability: Data can always be read or written even if some system fails and data can't be consistent over the whole distributed system.
-*a given system continues to operate even with data loss or system failure. A single node failure should not cause the entire system to collapse.
+*Partition tolerance: A given system continues to operate even with data loss or system failure. A single node failure should not cause the entire system to collapse.
 *https://youtu.be/R_Fxz14tr2M
 ---------------------------------------------------------------------
 A BASE system gives up on consistency.
@@ -21,7 +21,7 @@ The fundamental difference between ACID and BASE database models is the way they
 *https://phoenixnap.com/kb/acid-vs-base#:~:text=The%20fundamental%20difference%20between%20ACID,BASE%20model%20provides%20high%20availability.
 ---------------------------------------------------------------------
 SQL: For relational database. Great for small application. Maintains ACID property. Main issue is scalability. Example: mysql
-NoSQL: There is no restriction to what type of data can be stored. Usually data is stored in a json format. Example: mongoDb. Highly scalable. Not very reliable when it comes to ACID.
+NoSQL: There is no restriction to what type of data can be stored. Usually data is stored in a json format. Example: mongoDb, firebase. Highly scalable. Not very reliable when it comes to ACID.
 ---------------------------------------------------------------------
 SQL is a query language, whereas MySQL is a relational database that uses SQL to query a database. You can use SQL to access, update, and manipulate the data stored in a database.
 ---------------------------------------------------------------------
@@ -32,7 +32,7 @@ A database is an organized collection of structured information, or data
 Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output.
 ---------------------------------------------------------------------
 *Hierarchical database model stores data in a tree like structure. Related data are physically connected as parent-child branches.
-*There are sepate table for different types of data. Related datas are not physically linked rather use foreign keys keys to relate to.
+*There are separate table for different types of data. Related datas are not physically linked rather use foreign keys keys to relate to.
 *https://www.google.com/amp/s/www.geeksforgeeks.org/difference-between-hierarchical-and-relational-data-model/amp/
 ---------------------------------------------------------------------
 DDL: Data definition language. Defines db structure. CREATE, ALTER, DROP, RENAME

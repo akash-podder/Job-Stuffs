@@ -1,0 +1,43 @@
+ANALYTICAL
+	* Bandor : diner shurute 3m uthe, diner seshe 2m name, 30m uthte koto din lagbe?
+	* difference of age of two people and one's age * 3 = another's age * 8 is given, find their age
+	* Avg(30) = Avg(40) + 12, find avg(40)
+	* ghono bostu er length, width, height dea ace, find(largest diagonal)
+	* Work time math
+	* The rent of a building is fixed. If 36 people have to pay, each person pays 12 dollars more than the case where there are 40 people in the building. What's the cost per person when there are 36 people in the building?
+	* The average speed of a train without stoppages is 48 kmph and average speed with stoppages is 40 kmph. How many minutes in an hour the train stops on an average?
+		https://www.job.school/posts/the-average-speed-of-a-train-without-stoppages-is-48-kmph-and-average-speed-with-stoppages-is-40-kmph-how-many-minutes-in-an-hour-the-train-stops-on-an-average?jobenid=TkRBNU9UUm5iM1ow
+	* Two concentric circles of radii a and b(a>b) are given. Find the length of the chord of the larger circle which touches the smaller circle.
+		https://doubtnut.com/question-answer/two-concentric-circles-of-radii-a-and-ba-gt-b-are-given-find-the-length-of-the-chord-of-the-larger-c-61733620
+	* There are 24 students in a seventh grade class. They will plant birches and roses at their school. While each girl planted 3 roses, every three boys planted 1 birch. At end of the day they planted 24 plants. How many birches and roses were planted?
+		https://www.quora.com/There-are-24-students-in-a-seventh-grade-class-They-will-plant-birches-and-roses-at-their-school-While-each-girl-planted-3-roses-every-three-boys-planted-1-birch-At-end-of-the-day-they-planted-24-plants-How-many
+
+PROGRAMMING
+	* Write a function that will receive a string as an input and will return the string in reverse order.
+	* ekta sentence deya thakbe word reverse korte hobe
+		input: I am a student.
+		output: student. a am I
+	* print a sequence using one loop: 10 9 8 7 6 5 4 3 2 1 2 3 4 5 6 7 8 9 10
+	* file theke number input niye summation/average ber korte hobe.
+	* ekta number er prime factor ber kora.
+	* normal recursion er problem chilo
+	* find repeated integer, from a integer array
+	* Find the elements that occurs only once in the array.
+	* Stack push/pop operation
+	* Duplicate array
+	* Write a program the prints that multiple of 3 from 1 to 200 in reverse order.
+	* A string was given. you need to print the string removing the fourth index.
+
+TESTING
+	* password er 5 ta validation likha.
+	* difference beween two html page
+	* form improvement with fixed field
+		name(may be textfield)
+		gender(may be textfield)
+		date of birth(may be textfield)
+		save button
+	* a simple calculator UI was given which capable with only addition. you need to write 5 test cases to test the calculator.
+		There was no code, only two placeholder where we input numbers
+	* fault in stack implementation in java
+	* fault in a method which average numbers
+		return type error and some more

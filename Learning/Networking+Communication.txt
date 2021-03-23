@@ -2,8 +2,8 @@
 	An IP address is a unique address that identifies a device on the internet or a local network.
 	Layer 3 address
 
-* IPv4 - 32 bit : 8 * 4 bits
-* IPv6 - 128 bit : 4 * 8 hexadecimal digits
+* IPv4 - 32 bit : 4 * 8 bits
+* IPv6 - 128 bit : 8 * 4 hexadecimal digits
 * MAC
 	Called physical address
 	48 bit : 6 * 2 hexadecimal digits
@@ -13,7 +13,7 @@
 	layer 2
 * Layers: https://www.geeksforgeeks.org/layers-of-osi-model/
 
-* Default gateway: Ip address for communicating with outside network. Routers private address is the network's default gateway
+* Default gateway: for communicating with outside network. Routers private address is the network's default gateway
 
 * HTTP
 	A “stateless” protocol.
