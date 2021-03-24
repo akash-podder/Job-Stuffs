@@ -1,10 +1,13 @@
 ANALYTICAL
 	* Bandor : diner shurute 3m uthe, diner seshe 2m name, 30m uthte koto din lagbe?
+		https://aprogrammersexperience.blogspot.com/2018/11/interview-questions-at-enosispart-1.html?m=1
 	* difference of age of two people and one's age * 3 = another's age * 8 is given, find their age
-	* Avg(30) = Avg(40) + 12, find avg(40)
+		https://aprogrammersexperience.blogspot.com/2018/11/interview-questions-at-enosispart-1.html?m=1
 	* ghono bostu er length, width, height dea ace, find(largest diagonal)
 	* Work time math
+		https://youtu.be/om8JIA6ZPvg
 	* The rent of a building is fixed. If 36 people have to pay, each person pays 12 dollars more than the case where there are 40 people in the building. What's the cost per person when there are 36 people in the building?
+		https://aprogrammersexperience.blogspot.com/2018/11/interview-questions-at-enosispart-1.html?m=1
 	* The average speed of a train without stoppages is 48 kmph and average speed with stoppages is 40 kmph. How many minutes in an hour the train stops on an average?
 		https://www.job.school/posts/the-average-speed-of-a-train-without-stoppages-is-48-kmph-and-average-speed-with-stoppages-is-40-kmph-how-many-minutes-in-an-hour-the-train-stops-on-an-average?jobenid=TkRBNU9UUm5iM1ow
 	* Two concentric circles of radii a and b(a>b) are given. Find the length of the chord of the larger circle which touches the smaller circle.
@@ -30,14 +33,30 @@ PROGRAMMING
 
 TESTING
 	* password er 5 ta validation likha.
+		https://www.qaacharya.in/2020/04/test-cases-scenarios-for-password-field.html
+	* test login page
+		https://www.softwaretestinghelp.com/login-page-test-cases/?fbclid=IwAR2M3GhmUG0EUaKfrKXBgVDYXpr1CjGGy34_WQXduP_YBoWl_Z7rKQZpcMM
+			Verify the login page for both, when the field is blank and Submit button is clicked.
+			Verify if a user is able to login with a new password only after he/she has changed the password.
+			Verify the login page by pressing ‘Back button’ of the browser. It should not allow you to enter into the system once you log out.
+			Verify if a user should be able to login with the same credentials in different browsers at the same time.
+			Verify the Login page against SQL injection attack.
 	* difference beween two html page
 	* form improvement with fixed field
 		name(may be textfield)
 		gender(may be textfield)
 		date of birth(may be textfield)
 		save button
+		https://www.socialmediatoday.com/content/21-ways-improve-your-forms
+			Use Descriptive Default Text in Form Fields
+			Make Input Field Text Disappear On Click
+			Display Inline Error Messages
+			Add Tooltip
+			Use cookies to Remember Preferences or Pre-Fill Form Fields
+			Use Auto-Complete Where Feasible
 	* a simple calculator UI was given which capable with only addition. you need to write 5 test cases to test the calculator.
 		There was no code, only two placeholder where we input numbers
+		https://onecore.net/sample-test-cases-for-calculator.htm
 	* fault in stack implementation in java
 	* fault in a method which average numbers
 		return type error and some more
