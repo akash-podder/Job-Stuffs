@@ -18,6 +18,12 @@ struct myComp {
 };
 
 
+* #include<..> just opens the file mentioned in the include and paste all the content
+* Pre processor cleans up code(removes new line, comment), includes stuffs from header files, replace defined stuffs etc.
+* .o, .obj or object files that contains the machine code(looks like bunch of numbers) of the preprocessed c/cpp file and it is the compiled file. Every c/cpp file will have one object file.
+* linker will link all the object files and libraries and generate a executable files.
+
+
 things left
 -----------
 comparator, comparator for struct

@@ -18,3 +18,8 @@ METHOD REFERENCE:
 	https://www.baeldung.com/java-method-references
 	https://www.javatpoint.com/java-8-method-reference
 	https://youtu.be/svQKKg3aFzo
+
+Autoboxing and Unboxing
+	https://www.geeksforgeeks.org/autoboxing-unboxing-java/
+	Autoboxing: Converting a primitive value into an object of the corresponding wrapper class is called autoboxing. Ex. Integer i = 10;
+	Unboxing: Converting an object of a wrapper type to its corresponding primitive value is called unboxing

@@ -1,3 +1,15 @@
+morning to lunch	-> academic
+lunch to evening	-> problem solving + job folder
+evening rest		-> relax
+night to dinner		-> theory on pc + things left
+dinner to sleep		-> revise cv stuffs on mobile
+
+
+
+
+
+
+
 (11am	to	5:30pm)	->	algorithm, data structure, coding, (Leetcode/Interviewbit/Hackerrank)
 (5:30pm	to	7pm)	->	rest
 (7pm	to	12am)	->	projects
