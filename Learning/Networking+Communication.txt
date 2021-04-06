@@ -1,29 +1,105 @@
+* Distributed System
+	A distributed system, also known as distributed computing, is a system with multiple components located on different machines that communicate and coordinate actions by passing messages in order to appear as a single coherent system to the end-user.
+
+* Network topology
+	Bus
+	Ring
+	Star
+	Tree
+	Mesh
+	Hybrid
+	https://www.geeksforgeeks.org/types-of-network-topology/
+
+* Client server architecture
+	There is a specific cerntralized server where specific clients are connected to. Clients can only communicate or make requests through the server. Server responds to all the clients requests based on the clients requirements. Ex: whatsapp
+
+* Peer to peer architecture
+	There is no centralized server in peer to peer architecture. Each node can act as a server or client and can directly communicate. Ex: bitCoin, bitTorrent.
+
+* OSI model
+	The OSI(Open System Interconnection) model describes an idealized network communications with a family of protocols.
+	Layers
+		1. Physical layer
+		2. Data link layer
+		3. Network layer
+		4. Transport layer
+		5. Presentation layer
+		6. Session layer
+		7. Application layer
+	https://www.geeksforgeeks.org/layers-of-osi-model/
+
+* TCP/IP model
+	The TCP stands for Transmission Control Protocol, whereas IP stands for Internet Protocol. TCP/IP is an implementation of the OSI model.
+	Layers
+		1. Physical layer
+		2. Data link layer
+		3. Internet layer
+		4. Transport layer
+		5. Application layer
+	https://docs.oracle.com/cd/E19683-01/806-4075/ipov-10/index.html
+
+* Classful addressing
+	https://www.geeksforgeeks.org/introduction-of-classful-ip-addressing/
+
+* Classless addressing
+	https://www.geeksforgeeks.org/ip-addressing-classless-addressing/
+
+* Subnet Mask
+	A subnet mask is a 32-bit number created by setting host bits to all 0s and setting network bits to all 1s. In this way, the subnet mask separates the IP address into the network and host addresses
+
+* CIDR(Classless Inter Domain Routing) prefix
+	Alternate way of writing subnet mask
+	https://www.ionos.com/digitalguide/server/know-how/cidr-classless-inter-domain-routing/
+
 * IP address
 	An IP address is a unique address that identifies a device on the internet or a local network.
 	Layer 3 address
+	Private IP
+		Used to identify a device and communicate on the local network.
+		Can't access the outside network or web.
+		Private IP Address range:
+			10.0.0.0 – 10.255.255.255,
+			172.16.0.0 – 172.31.255.255,
+			192.168.0.0 – 192.168.255.255
+	Public IP
+		Public IP Address is used to communicate outside the network.
 
-* IPv4 - 32 bit : 4 * 8 bits
-* IPv6 - 128 bit : 8 * 4 hexadecimal digits
+* IPv4 address
+	The IPv4 address is a 32-bit number that uniquely identifies a network interface on a machine.
+	32 bit : 4 * 8 bits
+* IPv6 address
+	128 bit : 8 * 4 hexadecimal digits
+	The primary function of IPv6 is to allow for more unique TCP/IP address identifiers to be created, now that we've run out of the 4.3 billion created with IPv4.
+
 * MAC
 	Called physical address
 	48 bit : 6 * 2 hexadecimal digits
 	Example: FF-FF-FF-FF-FF-FF
 	First half manufacture id, second half device identifier
 	Hardcoded during production
-	layer 2
-* Layers: https://www.geeksforgeeks.org/layers-of-osi-model/
+	layer 2 address
 
-* Default gateway: for communicating with outside network. Routers private address is the network's default gateway
+* Network address
+	1st address of the network. It is used to identify the network.
+* Broadcast address
+	An address that enables transmission to every node in a local network.
+	This is usually the last address of the network.
 
-* HTTP
-	A “stateless” protocol.
-	There is no “built-in” standard to keep track of interrelated requests.
-	Each request is treated as independent.
+* NAT
+	Network Address Translation (NAT) is a process in which one or more local IP address is translated into one or more Global IP address and vice versa in order to provide Internet access to the local hosts.
+	https://www.geeksforgeeks.org/network-address-translation-nat/
+
+* Default gateway
+	For communicating with outside network. Routers private address is the network's default gateway
+
 * DHCP
 	Dynamic Host Cofiguration Protocol
 	Grants ip address dynamically to the nodes in the network.
+	PORT: 67/68
 * DNS
 	Domain Name System
+	Maps domain to the corresponding IP address
+	PORT: 43
 * ARP
 	Address resolution protocol
 	Used to resovle ip address to mac address
@@ -35,10 +111,30 @@
 	Use for testing reachability of host
 	Uses Internet Control Message Protocol(ICMP) which is coupled with the IP protocol
 
-* Encryption
-	Symatric
-	Asymatric
-	RSA, AES
+* TCP vs UDP
+	Tranmission Control Protocol. User Datagram Protocol
+	Layer 4 protocol
+	Connection oriented. Connection less
+	Has acknowledgement. No acknowledgement
+	Reliable. Not reliable
+	Slow. Fast
 
-* Remaining
-	statefull vs stateless
+* HTTP
+	A “stateless” protocol.
+	There is no “built-in” standard to keep track of interrelated requests.
+	Each request is treated as independent.
+	Application layer protocol
+	PORT: 80
+* HTTPS
+	Secure http. Encrypts http request and respones.
+	PORT: 443
+
+* SMTP
+	Simple mail transfer protocol
+	Application layer protocol
+	PORT: 25
+
+* FTP
+	File transfer protocol
+	Uses TCP
+	PORT: 20/21

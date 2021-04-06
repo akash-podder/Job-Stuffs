@@ -1,6 +1,8 @@
-*Divide and conquer means first divide into smaller sub problems. solve the smaller sub problems then merge
-*Binary search is decrease and conquer
-*Greedy algorithm: Prim's, krushkal's, Dijkstra
+* Divide and conquer means first divide into smaller sub problems. solve the smaller sub problems then merge
+* Binary search is decrease and conquer
+* Sorting Algorithms
+	https://www.geeksforgeeks.org/know-sorting-algorithm-set-1-sorting-weapons-used-programming-languages/
+* Greedy algorithm: Prim's, krushkal's, Dijkstra
 
 * Minimum spanning Tree
 	Spanning tree of a connected graph is a tree that connects all the vertice
@@ -16,7 +18,7 @@
 * Krushkal's
 	Finds minimum spanning tree in an undirected connected graph
 	For non-connected graph, it finds mst for every sub connected graph
-	Selects the lowert cost node if that doesn't make any cycle
+	Selects the lowest cost node if that doesn't make any cycle
 	Works with negative edges
 	Complexity: O(ElogV) or O(ElogE)
 

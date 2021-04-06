@@ -34,7 +34,7 @@
 	hides ip
 	doesn't encrypt data
 	Server doesn't know who is requesting
-	Can cache. Proxy server will respond immediately if it has the response of the client in cache instead of communication with the server.
+	Can cache. Proxy server will respond immediately if it has the response of the client in cache instead of communicating with the server.
 	ISP proxy server can block sites.
 
 * Firewall
@@ -57,6 +57,8 @@
 	Server saves status and session information
 	Example: TCP, FTP, Telnet
 
+* HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses.
+
 * Cookie
 	An HTTP cookie is a small piece of data stored on the user's computer by the web browser while browsing a website.
 	Cookies are sent using http headers.
@@ -65,7 +67,7 @@
 * Session
 	A session is a temporary and interactive information interchange between two or more communicating devices, or between a computer and user.
 	Session is stored in the server's database. Session contains information about the user.
-	Sesion id is sent as a cookie to the user's browser so that the server can validate the user next time the user visitis the website.
+	Sesion id is sent as a cookie to the user's browser so that the server can validate the user next time when visiting the website.
 
 * Token
 	To authorize a service to a third party(like any android application) token is used.
@@ -85,7 +87,7 @@
 * Microservice Architecture
 	In microservice architecture, application is broken down into separate independent compnents and each component is maintained separately.
 	The components talk to each other via api calls.
-	Separate unit can be easily fixed and during that time only that service of the app ill be unaccesible to the user
+	Separate unit can be easily fixed and during that time only that service of the app will be unaccesible to the user
 	Example: Facebook
 
 * Encoding
@@ -94,16 +96,78 @@
 
 * Encryption
 	Encryption is a two-way function used mainly for protection and security.
-	Encrypted things can be decrypted by using proper key (Symetric, Asymetric).
-	Example: AES, RSA
+	Encrypted things can be decrypted by using proper key
+	Example: Symmetric(AES), Asymmetric(RSA).
 
 * Hashing
 	Hashing converts an input into an irreversable form.
-	Hashing mainly used for checking data integrity and validation.
+	Hashing mainly used for checking data integrity and validating.
 	Same input will always generate same hash if same hashing algorithm is used.
 	Example: MD4, MD5, SHA
 
-* Remaining
-	Symetric
-	Asymetric
-	AES, RSA
+* Symmetric Encryption
+	Symmetric encryption is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information.
+	The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process.
+
+* Asymetric Encryption
+	public key can only encrypt the data and available to everyone.
+	private key can only decrypt the data and only available to the user.
+
+* Digital Signature
+	Digital signature is an electronic verification of the sender.
+	Process
+		Sender send the public key to the receiver.
+		Sender hashesh a data. The hash is called digest.
+		Sender encrypts the digest using his private key.
+		Sender sends the encrypted message and data to the receiver.
+		Receiver decypts the encrypted message and hashesh the data.
+		If the two are equal then the sender is verified.
+
+* Operating System
+	Operating system (OS) manages all of the software and hardware on the computer
+	OS manages all the programs so that each can access the CPU.
+	An operating system is the most important software that runs on a computer.
+	It allows software to communicate with the hardware through system calls.
+
+* Kernel
+	A Kernel is a computer program that is the heart and core of an Operating System.
+	Whenever a system starts, the Kernel is the first program that is loaded after the bootloader because the Kernel has to handle the rest of the thing of the system for the Operating System.
+	The Kernel remains in the memory until the Operating System is shut-down.
+	The Kernel is responsible for low-level tasks such as disk management, memory management, task management, etc.
+	When a process makes a request to the Kernel, then it is called System Call.
+
+* Process
+	Process means any program is in execution.
+	Process states: new, ready, running, waiting, terminated, suspended.
+
+* Thread
+	Thread is the segment of a process means a process can have multiple threads and these multiple threads are contained within a process.
+	A thread have 3 states: running, ready, and blocked.
+	Two Types
+		User level: implemented by user and the thread management kernel is not aware of the existence of threads.
+		Kernel level: kernel threads are implemented by OS.
+
+* Deadlock
+	Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
+
+* Logical address are the virtual addresses used inside a process, e.g. variables. This virtual addresses actually represent actual locations inside the memory. Memory-Management Unit is used for mapping logical address to its corresponding physical address.
+
+* Physical Address identifies a physical location of required data in a memory.
+
+* Critical Section is the part of a program which tries to access shared resources.
+
+* Semaphore
+	Semaphore is simply a variable that is non-negative and shared between threads.
+	Control the entry of a task into the critical section
+	Used for thread synchronization
+	two operations: wait, signal
+
+* Assembler
+	The Assembler is used to translate the program written in Assembly language into machine code.
+
+* Compiler
+	The language processor that reads the complete source program written in high level language as a whole in one go and translates it into an equivalent program in machine language is called as a Compiler.
+	Example: C, C++, C#, Java
+
+* Interpreter
+	interpreters converts source code into intermediate code and then this intermediate code is executed line by line.

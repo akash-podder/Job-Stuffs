@@ -8,7 +8,7 @@ The CAP theorem states that a distributed computer system cannot guarantee all o
 A BASE system gives up on consistency.
 *Basic Availability: The database appears to work most of the time.
 *Soft State: Stores don’t have to be write-consistent or mutually consistent all the time.
-*Eventual consistency: Data should always be consistent, with regards how any number of changes are performed
+*Eventual consistency: Data should always be consistent, with regards how many number of changes are performed
 *Example: No one would mind if their tweet were inconsistent within their social network for a short period of time. It is more important to get an immediate response than to have a consistent state of users' information
 ---------------------------------------------------------------------
 Transaction is a logical unit of work, which can be an action or a series of action carried out by a single user or application program and accesses and possibly modifies the contents of a database.
@@ -33,7 +33,7 @@ Relational algebra is a procedural query language, which takes instances of rela
 ---------------------------------------------------------------------
 *Hierarchical database model stores data in a tree like structure. Related data are physically connected as parent-child branches.
 *There are separate table for different types of data. Related datas are not physically linked rather use foreign keys keys to relate to.
-*https://www.google.com/amp/s/www.geeksforgeeks.org/difference-between-hierarchical-and-relational-data-model/amp/
+*https://www.geeksforgeeks.org/difference-between-hierarchical-and-relational-data-model/
 ---------------------------------------------------------------------
 DDL: Data definition language. Defines db structure. CREATE, ALTER, DROP, RENAME
 DML: Data manipulate language. INSERT, UPDATE, DELETE
@@ -53,7 +53,7 @@ Row = Tuple = Record = Entry
 ---------------------------------------------------------------------
 Constraints: https://www.w3resource.com/mysql/creating-table-advance/constraint.php#:~:text=MySQL%20CONSTRAINTS%20are%20used%20to,applied%20to%20the%20entire%20table.
 ---------------------------------------------------------------------
-Keys: https://www.guru99.com/dbms-keys.html#:~:text=CANDIDATE%20KEY%20is%20a%20set,key%20with%20no%20repeated%20attributes.&text=A%20table%20can%20have%20multiple%20candidate,only%20a%20single%20primary%20key.
+Keys: https://www.guru99.com/dbms-keys.html
 Foreign keys can be null
 ---------------------------------------------------------------------
 Query optimization is a feature of many relational database management systems and other databases such as graph databases. The query optimizer attempts to determine the most efficient way to execute a given query by considering the possible query plans.

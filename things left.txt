@@ -13,6 +13,12 @@ gcd, lcm
 doubly linked list implementation java
 
 java 2-1 final question
+learn database
+write os and networking 
+write section about design pattern
+write section about uml diagram
+write about jdk fre jvm
+write digital signature, asymmetric enrytpion
 CORS
 pull request
 java stream

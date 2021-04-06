@@ -4,7 +4,7 @@ ArrayList
 	Not synchronized
 
 Vector
-	Almost same ArrayList
+	Almost same as ArrayList
 	Doubles twice in size when capacity reaches
 	Synchronized
 	Stack is a subclass
