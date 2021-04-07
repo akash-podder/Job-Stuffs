@@ -11,7 +11,7 @@
 	https://www.geeksforgeeks.org/types-of-network-topology/
 
 * Client server architecture
-	There is a specific cerntralized server where specific clients are connected to. Clients can only communicate or make requests through the server. Server responds to all the clients requests based on the clients requirements. Ex: whatsapp
+	There is a specific centralized server where specific clients are connected to. Clients can only communicate or make requests through the server. Server responds to all the clients requests based on the clients requirements. Ex: whatsapp
 
 * Peer to peer architecture
 	There is no centralized server in peer to peer architecture. Each node can act as a server or client and can directly communicate. Ex: bitCoin, bitTorrent.
@@ -93,7 +93,7 @@
 	For communicating with outside network. Routers private address is the network's default gateway
 
 * DHCP
-	Dynamic Host Cofiguration Protocol
+	Dynamic Host Configuration Protocol
 	Grants ip address dynamically to the nodes in the network.
 	PORT: 67/68
 * DNS
@@ -104,6 +104,7 @@
 	Address resolution protocol
 	Used to resovle ip address to mac address
 	Device uses mac address and not ip address to communicate on local network
+	Layer 3(Internet) protocol
 * Routing Table
 	Used to determine which gateway to use to send the data
 	Determines next hop based on the rules
@@ -123,7 +124,6 @@
 	A “stateless” protocol.
 	There is no “built-in” standard to keep track of interrelated requests.
 	Each request is treated as independent.
-	Application layer protocol
 	PORT: 80
 * HTTPS
 	Secure http. Encrypts http request and respones.
@@ -131,7 +131,6 @@
 
 * SMTP
 	Simple mail transfer protocol
-	Application layer protocol
 	PORT: 25
 
 * FTP

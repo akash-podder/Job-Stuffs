@@ -150,7 +150,7 @@
 * Deadlock
 	Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
 
-* Logical address are the virtual addresses used inside a process, e.g. variables. This virtual addresses actually represent actual locations inside the memory. Memory-Management Unit is used for mapping logical address to its corresponding physical address.
+* Logical address are the virtual addresses used inside a process, e.g. variables. This virtual addresses represent actual locations inside the memory. Memory-Management Unit is used for mapping logical address to its corresponding physical address.
 
 * Physical Address identifies a physical location of required data in a memory.
 

@@ -9,10 +9,10 @@ Generic
 
 Polymorphism
 	JAVA allows same name for static and instance method. Even their return type can be different;
-	Return type must be same for overloaded methods.(recheck this)
+	Return type can be different for overloaded methods.(recheck this)
 
 Default and Multiple inheritance
-	https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9#:~:text=Java%208%20brought%20a%20major,while%20making%20this%20big%20change.&text=Any%20method%20inherited%20from%20a,method%20inherited%20from%20an%20interface.
+	https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9
 
 METHOD REFERENCE:
 	https://www.baeldung.com/java-method-references

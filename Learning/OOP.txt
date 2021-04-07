@@ -4,15 +4,6 @@ Object Oriented programming (OOP) is a programming paradigm that relies on the c
 Object-oriented programming is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields, and code, in the form of procedures.
 Properties: Abstraction, Encapsulation, Inheritance, Polymorphism
 ---------------------------------------------------------------------
-SOLID
-	Acronym for the first five object-oriented design (OOD) principles
-	S - Single-responsiblity Principle
-	O - Open-closed Principle
-	L - Liskov Substitution Principle
-	I - Interface Segregation Principle
-	D - Dependency Inversion Principle
-	https://www.baeldung.com/solid-principles
----------------------------------------------------------------------
 ABSTRACTION:
 Showing only what needs to be seen and hiding details. Using abstract class and interface. Another example can be making helper methods and variable private and keeping only what user needs to see public.
 ---------------------------------------------------------------------
@@ -26,27 +17,36 @@ POLYMORPHISM:
 *Compile time polymorphism: Method overloading
 *Run time polymorphism: Method overriding. Also known as dynamic method dispatch.
 *JAVA allows same name for static and instance method. Even their return type can be different;
-*Return type must be same for overloaded methods.
 ---------------------------------------------------------------------
 INHERITANCE:
 Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object
+---------------------------------------------------------------------
+SOLID
+	Acronym for the first five object-oriented design (OOD) principles
+	S - Single-responsiblity Principle
+	O - Open-closed Principle
+	L - Liskov Substitution Principle
+	I - Interface Segregation Principle
+	D - Dependency Inversion Principle
+	https://www.baeldung.com/solid-principles
 ---------------------------------------------------------------------
 Class is template or blueprint. Object is the instance of that blueprint.
 https://www.javatpoint.com/difference-between-object-and-class
 ---------------------------------------------------------------------
 *An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. When partial implementation is needed, abstract class should be used.
-*Abstrct class can have contractor, interface can't.https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9#:~:text=Java%208%20brought%20a%20major,while%20making%20this%20big%20change.&text=Any%20method%20inherited%20from%20a,method%20inherited%20from%20an%20interface.
+*Abstrct class can have contractor, interface can't.
 ---------------------------------------------------------------------
-Default in java: 
----------------------------------------------------------------------
-Error vs exception: https://www.tutorialspoint.com/difference-between-exception-and-error-in-java#:~:text=Errors%20mostly%20occur%20at%20runtime,checked%20exceptions%20and%20unchecked%20exceptions.
+Default in java:
+https://www.javacodemonk.com/diamond-problem-of-inheritance-in-java-8-88faf6c9
 ---------------------------------------------------------------------
 *An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
-*when the error occurred. Creating an exception object and handing it to the runtime system is called throwing an exception.
+*when an error occurred, creating an exception object and handing it to the runtime system is called throwing an exception.
 *https://www.javatpoint.com/exception-handling-in-java
 ---------------------------------------------------------------------
+Error vs exception: https://www.tutorialspoint.com/difference-between-exception-and-error-in-java
+---------------------------------------------------------------------
 FINAL:
-*Filan variable can only be initialized after declaration inside a constructor. Also final static variable can only be initialized after declaration inside static block.
+*Final variable can only be initialized after declaration inside a constructor. Also final static variable can only be initialized after declaration inside static block.
 *Final variable can't be changed
 *Final and private method can't be overridden
 *Final class cannot be extended
@@ -63,7 +63,7 @@ The static block is a block of statement inside a Java class that will be execut
 ---------------------------------------------------------------------
 Threading:
 * Join: The parent thread waits until the joined thread is terminated. Defined in Thread class.
-* Wait: Can only be called inside synchornized method or block. wait() causes the accessing thread to go into waiting state until any other thread which is accessing the same resource calls notify() or notifyAll(). Defined in Object class.
+* Wait: Can only be called inside synchronized method or block. wait() causes the accessing thread to go into waiting state until any other thread which is accessing the same resource calls notify() or notifyAll(). Defined in Object class.
 * Notify: Notify arbitrarily wakes up any thread which is waiting on the same resource. notifyAll() will wake up all the thread waiting on the same resource. Defined in Object class.
 ---------------------------------------------------------------------
 Heap:
