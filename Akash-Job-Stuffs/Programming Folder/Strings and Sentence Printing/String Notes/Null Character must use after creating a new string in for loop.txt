@@ -1,0 +1,59 @@
+Null Character must use after creating a new string in for loop
+
+
+#include<stdio.h>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t,i,j,k;
+    int l1,l2,c1,c2;
+    char str1[1000],str2[1000];
+    char new_str1[1000],new_str2[1000];
+
+
+        gets(str1);
+        gets(str2);
+
+        l1=strlen(str1);
+        l2=strlen(str2);
+
+
+            c1=0;
+            c2=0;
+
+            for(j=0; j<l1; j++)
+            {
+                if((str1[j]>='a' && str1[j]<='z') || (str1[j]>='A' && str1[j]<='Z'))
+                {
+                    new_str1[c1++]=str1[j];
+                }
+
+                new_str1[c1]='\0';       /* Sobsomoy Null Character dite hobe naile hobe nahile string compare aer somoy kokonoi ek dekabe nah   */
+
+            }
+
+
+            for(j=0; j<l2; j++)
+            {
+                if((str2[j]>='a' && str2[j]<='z') || (str2[j]>='A' && str2[j]<='Z'))
+                {
+                    new_str2[c2++]=str2[j];
+                }
+
+                new_str2[c2]='\0';                  }
+
+            if(strcmp(new_str1, new_str2)==0)
+            {
+                printf("Case %d: Output Format Error\n",i);
+            }
+
+    
+
+
+
+
+    return 0;
+}

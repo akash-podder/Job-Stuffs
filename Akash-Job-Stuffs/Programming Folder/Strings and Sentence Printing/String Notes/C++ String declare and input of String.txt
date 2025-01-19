@@ -1,0 +1,18 @@
+C++ ae String declare ae somoy string aer size die cin>> kaj kore nah.... jemon..
+
+Example:
+
+string str[1000];
+
+cin>>str;
+
+eita kaj korbe nah.....
+
+
+but
+
+string str;
+
+cin>>str;
+
+kaj korbe...karon ami size bole dai nai....mane C++ ae size nah bole declare korte hui string ae.

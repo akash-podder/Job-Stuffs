@@ -1,0 +1,12 @@
+C++ ae Kono String aer moddhokar element compare korte gele ('')(single qoutaion)  dewa lagge....
+
+Example:
+
+string str;
+
+cin>>str;
+
+if(str[0]=='7');
+
+
+eitar mane huile str[0] aer bitor 7 character takle ei only if condition true hobe.  
