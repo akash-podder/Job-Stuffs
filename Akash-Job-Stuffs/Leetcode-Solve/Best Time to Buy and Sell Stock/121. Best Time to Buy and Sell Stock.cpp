@@ -1,3 +1,23 @@
+// Solution-1
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int minVal=prices[0];
+        int profit=0;
+
+        for(int i=1;i<prices.size();i++){
+            profit=max(profit, prices[i]-minVal);
+            minVal = min(minVal, prices[i]);
+        }
+
+        return profit;
+    }
+};
+
+
+////////////////////////////////////////////////////////////////////////
+
+// Solution-2
 class Solution {
 public:
     int solve(vector<int>& prices, int index, bool buy, vector<vector<int>> &dp) {
