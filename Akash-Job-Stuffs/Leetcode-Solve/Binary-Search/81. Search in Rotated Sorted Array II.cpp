@@ -19,7 +19,7 @@ public:
             }
 
             // Left Side is Sorted
-            if(nums[low]<nums[mid]){
+            if(nums[low]<=nums[mid]){
                 // if target Lies in the Left Sorted Portion we move the "high" to the Left
                 if(nums[low]<=target && target<=nums[mid]){
                     high=mid-1;
