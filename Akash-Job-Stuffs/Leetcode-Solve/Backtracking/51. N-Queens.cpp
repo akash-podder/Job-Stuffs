@@ -45,6 +45,7 @@ public:
         }
 
         for(int row=0;row<n;row++) {
+            // as we are putting Queens in Column from "left to right", so No Need to check if it's SAFE to the RIGHT SIDE Fields
             if(isSafe(board, n, row, col)){
                 board[row][col] = 'Q';
                 solve(ans, n, board, col+1);
