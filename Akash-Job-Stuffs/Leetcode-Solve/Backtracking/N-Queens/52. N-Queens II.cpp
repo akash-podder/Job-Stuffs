@@ -38,39 +38,36 @@ public:
         return true;
     }
 
-    void solve(vector<vector<string>> &ans, int &n, vector<string> &board, int col){
+    void solve(vector<string> &board, int &n, int col, int &ans){
+        // Base Condition: if "col" exceeds the "n" that means it is a Valid N-Queen Board
         if(col==n){
-            ans.push_back(board);
+            ans++;
             return;
         }
 
-        for(int row=0;row<n;row++) {
+        for(int row=0;row<n;row++){
             // as we are putting Queens in Column from "left to right", so No Need to check if it's SAFE to the RIGHT SIDE Fields
             if(isSafe(board, n, row, col)){
                 board[row][col] = 'Q';
-                solve(ans, n, board, col+1);
-                board[row][col] = '.'; // this is called "Backtracking", after we found the Answer we Simply just Keep the "board" as it was               
+                solve(board, n, col+1, ans);
+                board[row][col] = '.';// this is called "Backtracking", after we found the Answer we Simply just Keep the "board" as it was
             }
         }
-
-        return;
     }
 
-    vector<vector<string>> solveNQueens(int n) {
-        // Return all the BOARD with the N-Queen Solve
-        
-        vector<vector<string>> ans;
+    int totalNQueens(int n) {
+        int ans=0;
         vector<string> board;
 
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++) {
             string temp="";
-            for(int j=0;j<n;j++){
+            for(int j=0;j<n;j++) {
                 temp+=".";
             }
             board.push_back(temp);
         }
-
-        solve(ans, n, board, 0);
+        
+        solve(board, n, 0, ans);
 
         return ans;
     }
