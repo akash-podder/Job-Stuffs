@@ -19,7 +19,6 @@ public:
 
         // this means we have come to the LEAF NODE of the Tree
         if(current->left==NULL && current->right==NULL){
-            cout<<targetSum<<endl;
             targetSum=targetSum-current->val; // we Subtract from the CurrentNode Value
             
             if(targetSum==0){ // check after Minus, it has Become ZERO
