@@ -13,17 +13,21 @@ class Solution {
             if(s[index]=='0'){
                 return 0;
             }
-    
-            // At Every Index we can Decode in 2-ways 
+            
+            // *** Think it like TAKE or NOT TAKE ***
+            // But here is 2 TAKE Scenerios
+
+            // At Every Index we can Decode in 2-ways...
             // 1st way ---> We Take the Current Char
-            // 2nd way ---> we can COMBINE with the Next Character if these Two characters Form Less than 26
+            // 2nd way ---> We can ONLY TAKE if: COMBINE with the Next Character if these Two characters Form Less than 26
             
             int ans=0;
     
-            // 1st Way
+            // 1st Way ---> Always TAKE
             ans = solve(s, index+1, cache);
     
-            // 2nd Way... first we check if "(index+1)" Doesn't Exhaust the String
+            // 2nd Way... We can Only Take if between (10-26) Range
+            // first we check if "(index+1)" Doesn't Exhaust the String
             if(index+1<s.size()) {
                 // (10-26) --> for these Values
                 if(s[index]=='1' || (s[index]=='2' && s[index+1]>='0' && s[index+1]<='6')){
