@@ -13,8 +13,15 @@ class Solution {
             }
     
             // 2. Now just REVERSE Each of the Rows
+            // for(int i=0;i<row;i++){
+            //     reverse(matrix[i].begin(),matrix[i].end());
+            // }
+            
+            // without Built-in Function
             for(int i=0;i<row;i++){
-                reverse(matrix[i].begin(),matrix[i].end());
+                for(int j=0;j<col/2;j++){
+                    swap(matrix[i][j], matrix[i][col-1-j]); // swaping Each Element of a Particular Row
+                }
             }
         }
     };
