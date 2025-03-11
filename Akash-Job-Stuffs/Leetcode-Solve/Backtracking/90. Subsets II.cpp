@@ -2,7 +2,7 @@ class Solution {
 public:
     void solve(vector<int>& nums, vector<vector<int>> &ans, vector<int>& temp_v, int index){
 
-        if(index==nums.size()){
+        if(index>=nums.size()){
             ans.push_back(temp_v);
             return;
         }
@@ -15,7 +15,7 @@ public:
 
         // we DONT Take the Current "index" Element
         // we Skip UNTIL we get DIFFERENT Element than the Current Element
-        if(index+1<nums.size() && nums[index]==nums[index+1]){
+        while(index+1<nums.size() && nums[index]==nums[index+1]){
             index++;
         }
         solve(nums, ans, temp_v, index+1);
