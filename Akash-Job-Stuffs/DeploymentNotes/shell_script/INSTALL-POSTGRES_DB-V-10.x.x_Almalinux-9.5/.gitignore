@@ -1,0 +1,23 @@
+# Log files
+*.log
+/var/log/install_postgis.log
+
+# Source archive downloads
+*.tar.gz
+*.tar.bz2
+*.zip
+
+# Compiled binaries and build dirs
+postgresql-10.*/
+proj-6.*/
+gdal-3.*/
+postgis-2.5.5/
+*.o
+*.out
+*.so
+*.a
+
+# System folders
+.DS_Store
+__pycache__/
+tmp/
