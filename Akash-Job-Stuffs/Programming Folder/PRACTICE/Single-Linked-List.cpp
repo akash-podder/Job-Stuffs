@@ -28,16 +28,39 @@ ListNode* AddNode(ListNode* head, int val){
 
         current->next = newNode;
     }
-    
+
     return head;
+}
+
+ListNode* DeleteNode(ListNode* head, int value){
+    ListNode* dummy = new ListNode();
+    dummy->next = head;
+    ListNode* temp = dummy;
+    ListNode* current = head;
+
+    while(current!=NULL){
+        if(current->val == value){
+            temp->next = current->next;
+            break;
+        }
+
+        current = current->next;
+        temp = temp->next;
+    }
+
+    return dummy->next;
 }
 
 void Print(ListNode* head){
 	ListNode* current = head;
+    cout<<"Linked List: ";
+    
 	while(current!=NULL){
-	    cout<<current->val<<endl;
+	    cout<<current->val<<" ";
 	    current = current->next;
     }
+
+    cout<<endl;
 }
 
 int main(){
@@ -45,5 +68,8 @@ int main(){
 	head  = AddNode(head, 2);
 	head  = AddNode(head, 1);
 	Print(head);
-	return 0;
+	head  = DeleteNode(head, 2);
+	Print(head);
+	
+    return 0;
 }
