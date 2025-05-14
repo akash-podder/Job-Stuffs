@@ -1,3 +1,23 @@
 cv/
 routine.txt
 .vscode/*
+
+# Ignore compiled C/C++ binaries
+*.out
+*.o
+*.obj
+*.exe
+*.a
+*.so
+*.dylib
+*.dll
+
+# Common MacOS hidden file
+.DS_Store
+
+# Ignore any output files with no extension (common for compiled executables)
+# Only do this if you're sure you don't need to track executables with no extension:
+*/LinkedList
+*/a.out
+a.out
+LinkedList
