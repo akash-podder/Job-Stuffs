@@ -1,3 +1,71 @@
+// ---------------------------SOLVE-1-----------------------------------------
+class MyPair{
+public:
+    int i;
+    int j;
+    int sum;
+
+    MyPair(int a, int b, int s){
+        i = a;
+        j = b;
+        sum = s;
+    }
+};
+
+class MyComparator{
+public:
+    bool operator()(const MyPair& a, const MyPair& b) {
+        return a.sum > b.sum; // Min Heap
+    };
+};
+
+class Solution {
+public:
+
+    vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
+        priority_queue<MyPair, vector<MyPair>, MyComparator> pq;
+
+        vector<vector<int>> ans;
+        
+        map<pair<int, int>, bool> visited; // there can be Duplicate Pairs, as such we have to check we have already visited it or Not
+        
+        pq.push(MyPair(0, 0, nums1[0]+nums2[0]));
+        
+        while(!pq.empty() && k>0){
+            // Decrementing the count
+            k--;
+
+            MyPair top = pq.top();
+            
+            pq.pop();
+            int i = top.i;
+            int j = top.j;
+            visited[{i,j}] = true; // As, the Minheap Ensures ALWAYS the LOWEST value will be in the TOP, we add {i, j} Pair to answer
+
+
+            ans.push_back({nums1[i], nums2[j]});
+
+            // Push (i+1, j) if Possible & previously NOT Visited
+            if(i+1 < nums1.size()){
+                if(visited[{i+1, j}]==false){
+                    pq.push(MyPair(i+1, j, nums1[i+1]+nums2[j]));
+                }
+            }
+
+            // Push (i, j+1) if Possible & previously NOT Visited
+            if(j+1 < nums2.size()){
+                if(visited[{i, j+1}]==false){
+                    pq.push(MyPair(i, j+1, nums1[i]+nums2[j+1]));
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+
+
+// ---------------------------SOLVE-2-----------------------------------------
 class Solution {
 public:
 
