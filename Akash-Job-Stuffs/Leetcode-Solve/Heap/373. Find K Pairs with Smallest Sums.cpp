@@ -49,6 +49,7 @@ public:
             if(i+1 < nums1.size()){
                 if(visited[{i+1, j}]==false){
                     pq.push(MyPair(i+1, j, nums1[i+1]+nums2[j]));
+                    visited[{i+1, j}]=true; // after Pushing it to "pq" we need to Mark it as Visited IMMEDIATELY, otherwise we can push the same element in the NEXT Loop
                 }
             }
 
@@ -56,6 +57,7 @@ public:
             if(j+1 < nums2.size()){
                 if(visited[{i, j+1}]==false){
                     pq.push(MyPair(i, j+1, nums1[i]+nums2[j+1]));
+                    visited[{i, j+1}]=true; // after Pushing it to "pq" we need to Mark it as Visited IMMEDIATELY, otherwise we can push the same element in the NEXT Loop
                 }
             }
         }
