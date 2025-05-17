@@ -18,10 +18,12 @@ public:
             // Do Remember:
             // Single “&” is for Bitwise “AND”
 
-            if((twoNumberXor & (1<<k))>0){
+            // "!=0" Because Numbers can be Negative
+            if((twoNumberXor & (1<<k))!=0){
                 cout<<k<<endl;
                 for(int i=0; i<nums.size();i++){
-                    if((nums[i] & (1<<k)) > 0){
+                    // "!=0" Because Numbers can be Negative
+                    if((nums[i] & (1<<k)) != 0){
                         list1.push_back(nums[i]);
                     }
                     else{
@@ -36,13 +38,18 @@ public:
         int a=0, b=0;
 
         for(int i=0; i<list1.size();i++){
+            cout<<list1[i]<<" ";
             a = a^list1[i];
         }
+
+        cout<<endl;
 
         for(int i=0; i<list2.size();i++){
             cout<<list2[i]<<" ";
             b = b^list2[i];
         }
+
+        cout<<endl;
         
         vector<int> ans;
 
@@ -52,7 +59,6 @@ public:
         return ans;
     }
 };
-
 
 
 // ------------------------ SOLVE-2 ---------------------------------
