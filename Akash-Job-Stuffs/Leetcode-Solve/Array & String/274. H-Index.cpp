@@ -1,3 +1,36 @@
+// -------------------- Java Solve --------------------------
+class Solution {
+    public int hIndex(int[] citations) {
+        Arrays.sort(citations);
+
+        int len = citations.length;
+
+        int ans = 0;
+
+        int low = 0;
+        int high = len-1;
+
+        // we are doing Binary Search to Find Furthest element from the "End" (OR, "high" in Binary Search), such that the Value "(citations[mid])" in that INDEX is Greater than Equal to the Distance from the "End"
+        while(low<=high){
+            int mid = low + ((high-low)/2);
+            
+            // Move to Left
+            if((len-mid)<=citations[mid]){
+                high = mid-1;
+                ans = len-mid;
+            }
+
+            // Move to Right
+            else{
+                low = mid+1;
+            }
+        }
+
+        return ans;
+    }
+}
+
+// -------------------- C++ Solve --------------------------
 class Solution {
 public:
     int hIndex(vector<int>& citations) {
