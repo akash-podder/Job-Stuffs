@@ -1,4 +1,3 @@
-// User function Template for Java
 class Solution {
     public static int[] productExceptSelf(int nums[]) {
         int len = nums.length;
